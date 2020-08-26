@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  padding: 0 100px;
+  min-height: 100vh;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 350px;
+    top: 0;
+    right: 0;
+    background: #333;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "Healthy";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 18vw;
+    font-weight: bold;
+    opacity: 0.04;
+    z-index: -1;
+  }
+}
