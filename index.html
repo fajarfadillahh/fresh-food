@@ -11,7 +11,7 @@
   <body>
     <div class="container">
       <!-- navbar -->
-      <header>
+      <header id="navbar">
         <a href="#" class="logo">Fresh<span>Foods</span></a>
         <ul class="nav-link">
           <li><a href="#" class="active">Home</a></li>
@@ -19,26 +19,94 @@
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+
+        <span class="menuIcon"></span>
       </header>
 
       <!-- hero -->
       <div class="hero">
-        <div class="hero-text">
-          <h2>
-            EAT Healthy<br />
-            Stay Healthy
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-            perspiciatis fuga sit molestiae magni repellat similique expedita
-            repellendus exercitationem voluptatibus.
-          </p>
+        <div class="hero-text" id="slideshowText">
+          <div class="active">
+            <h2>
+              EAT Healthy<br />
+              Stay Healthy
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+              perspiciatis fuga sit molestiae magni repellat similique expedita
+              repellendus.
+            </p>
+          </div>
+
+          <div>
+            <h2>
+              EAT Your<br />
+              Veggies
+            </h2>
+            <p>
+              Doloremque magnam vel perspiciatis tenetur ipsam nisi natus, hic
+              beatae expedita cupiditate velit necessitatibus.
+            </p>
+          </div>
+
+          <div>
+            <h2>
+              Good Food<br />
+              Good Mood
+            </h2>
+            <p>
+              Delectus fugit eveniet ut neque exercitationem ducimus repellat
+              mollitia cum expedita facilis, deserunt laborum.
+            </p>
+          </div>
+
           <a href="#">Read More</a>
         </div>
 
-        <div class="hero-img">
+        <div class="hero-img" id="slideshow">
+          <img src="./img/image-1.jpg" class="active" alt="Hero Image" />
           <img src="./img/image-2.jpg" alt="Hero Image" />
+          <img src="./img/image-3.jpg" alt="Hero Image" />
         </div>
+      </div>
+
+      <div class="icons">
+        <ul class="link-social">
+          <li>
+            <a href="#"
+              ><img src="./img/icons/bxl-facebook.svg" alt="Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./img/icons/bxl-twitter.svg" alt="Twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./img/icons/bxl-instagram.svg" alt="Instagram"
+            /></a>
+          </li>
+        </ul>
+
+        <ul class="controls">
+          <li>
+            <a href="#"
+              ><img
+                src="./img/icons/bxs-chevron-left.svg"
+                alt="Left"
+                onclick="prevSlide();prevSlideText();"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./img/icons/bxs-chevron-right.svg"
+                alt="Right"
+                onclick="nextSlide();nextSlideText();"
+            /></a>
+          </li>
+        </ul>
       </div>
     </div>
 

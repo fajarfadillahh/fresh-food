@@ -1,0 +1,46 @@
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 45px 0;
+
+  .link-social {
+    position: relative;
+    display: flex;
+
+    li {
+      list-style: none;
+      margin-right: 30px;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2, 1.2);
+      }
+
+      img {
+        width: 28px;
+      }
+    }
+  }
+
+  .controls {
+    position: relative;
+    display: flex;
+
+    li {
+      list-style: none;
+      margin-left: 20px;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        opacity: 0.5;
+      }
+
+      img {
+        width: 50px;
+        border: 2px solid #000;
+        filter: invert(1);
+      }
+    }
+  }
+}
